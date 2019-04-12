@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tâches</string>
+    <string name="edit_activity">Ajouter/Modifier tâche</string>
+    <string name="priorite">Priorité :</string>
+    <string name="menu_add">Ajouter une tâche</string>
+    <string name="menu_quit">Quitter</string>
+    <string name="menu_delete">Supprimer</string>
+    <string name="menu_edit">Editer</string>
+    <string name="title_label">Titre</string>
+    <string name="priority_label">Priorité</string>
+    <string name="ok_button">Sauver</string>
+    <string name="cancel_button">Annuler</string>
+</resources>

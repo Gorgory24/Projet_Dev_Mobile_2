@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView android:id="@+id/title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_label"/>
+
+    <EditText android:id="@+id/title_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/title_textview" />
+
+    <TextView android:id="@+id/priority_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_edittext"
+        android:text="@string/priority_label"/>
+
+    <EditText android:id="@+id/priority_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/priority_textview"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/priority_edittext"
+        android:layout_marginLeft="10dip"
+        android:onClick="okClick"
+        android:text="@string/ok_button" />
+
+    <Button android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ok"
+        android:layout_alignTop="@id/ok"
+        android:onClick="cancelClick"
+        android:text="@string/cancel_button" />
+
+</RelativeLayout>
